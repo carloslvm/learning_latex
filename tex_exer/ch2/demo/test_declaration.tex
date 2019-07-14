@@ -1,0 +1,57 @@
+\documentclass[a4paper,11pt]{article}
+
+\begin{document}
+\title{Testing sffamily, ttfamily, rmfamily.}
+\author{Carlos Valdez}
+\date{June 24, 2019}
+\maketitle
+
+\section{Introduction}
+
+In this document I use some basic \LaTeX\ declarations that affect
+the whole text when \emph{they are declare at least once.}\\
+
+These declarations are: \emph{\textbf{sffamily, ttfamily, rmfamily.}}\\
+
+The following text was taken from \texttt{www.openvpn.net}.
+
+\section{OpenVpn (text sample)}
+
+% This paragraph should be printed in san serif font.
+\sffamily \textbf{OpenVPn} is a full featured open source SSL VPN solution that
+accommodates a wide range of configurations, including remote access,
+site to site VPNs. Wi-Fi security, and enterprise scale remote access
+solutions with load balancing fallover and fine grained access controls.
+\\
+
+% This paragraph should be printed in typewriter font.
+\ttfamily \textbf{OpenVpn} offers a cost effective lightweight alternative
+to other VPN technologies making it the best solution for small to medium
+enterprises.
+
+\section{Conclusion}
+
+% Return to roman font (default font)
+\rmfamily Two paragraph were printed with two different fonts and here
+I return to the default font.\\
+
+The difference between commands and declarations in \LaTeX\ are that
+commands need arguments in braces and only affect the text in braces,
+but declarations do not use braces and affect the text from the
+point you use them onwards.
+
+\end{document}
+
+% Summarizing declarations:
+
+% \rmfamily		Roman family.
+% \sffamily		Sans-serif family
+% \ttfamily		Typewriter family
+% \bfseries		Bold-face
+% \mdseries		Medium
+% \itshape		Italic shope
+% \slshape		Slanted shape
+% \scshape		Small Caps Shape
+% \upshape		Upright shape
+% \normalfont	Default font
+% \em			Emphasize
